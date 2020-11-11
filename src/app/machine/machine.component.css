@@ -1,5 +1,5 @@
 .machine-face {
-    background-color: #a8bec1;
+    background-color: #c0c0c0;
     background-image: repeating-linear-gradient(
         180deg,
         rgba(255,255,255,.07) 1px, transparent 2px,
@@ -7,10 +7,26 @@
         rgba(255,255,255,.17) 5px, transparent 6px,
         rgba(255,255,255,.19) 7px, transparent 8px
     );
-    width: 850px;
+    width: 870px;
     height: 400px;
-    border: 5px double #505a5b;
+    border: 5px double #5a5a5a;
     border-radius: 5px;
+}
+
+.number1 {
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+}
+
+.number2 {
+    padding: 0;
+    margin: 0;
+    margin-left: 7px;
+}
+
+.number-bulbs, .number2 {
+    display: inline-block;
 }
 
 .switch {
@@ -24,10 +40,10 @@
 }
 
 .switch-plate {
-    background-color: #505a5b;
+    background-color: #5a5a5a;
     width: 30px;
     height: 30px;
-    border: #2b3031 solid 10px;
+    border: #313131 solid 10px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -36,23 +52,33 @@
     margin-top: 8px;
     width: 30px;
     height: 60px;
-    background-color: #505a5b;
+    background-color: #5a5a5a;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-.flipped {
+.toggle-flipped-up {
     transform: rotate(180deg);
 }
 
-.number1 {
-    padding: 0;
-    margin: 0;
-    margin-left: 100px;
+.bulb-back {
+    margin: 20px 18px;
+    display: inline-block;
 }
 
-.number2 {
-    padding: 0;
-    margin: 0;
-    margin-left: 7px;
-    display: inline-block;
+.bulb-text {
+    display: flex;
+    justify-content: center;
+}
+
+.bulb {
+    background-color: #550000;
+    width: 37px;
+    height: 37px;
+    border: #313131 solid 10px;
+    border-radius: 50%;
+}
+
+.bulb-turned-on {
+    background-color: #ff0000;
+    box-shadow: 0px 0px 18px #ff3535;
 }
