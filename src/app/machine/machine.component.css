@@ -1,0 +1,14 @@
+.machine-face {
+    background-color: #a8bec1;
+    background-image: repeating-linear-gradient(
+        180deg,
+        rgba(255,255,255,.07) 1px, transparent 2px,
+        rgba(255,255,255,.13) 3px, transparent 4px,
+        rgba(255,255,255,.17) 5px, transparent 6px,
+        rgba(255,255,255,.19) 7px, transparent 8px
+    );
+    width: 900px;
+    height: 300px;
+    border: 5px double #505a5b;
+    border-radius: 5px;
+}
