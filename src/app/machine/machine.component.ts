@@ -12,4 +12,19 @@ export class MachineComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  flipToggle(switchId: string): void {
+    this.changeTogglePicture(switchId);
+  }
+
+  changeTogglePicture(switchId: string): void {
+    let toggle: HTMLElement = document.getElementById(switchId);
+
+    if (toggle.className.indexOf(" toggle-flipped-up") == -1) {
+      toggle.className += " toggle-flipped-up";
+    } else {
+      toggle.className = "switch-plate";
+    }
+  }
+
+
 }

@@ -7,7 +7,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate flipped">
+            <div id="num-one-7th-place" class="switch-plate"  (click)="flipToggle('num-one-7th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -17,7 +17,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-6th-place" class="switch-plate"  (click)="flipToggle('num-one-6th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-5th-place" class="switch-plate"  (click)="flipToggle('num-one-5th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-4th-place" class="switch-plate"  (click)="flipToggle('num-one-4th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-3rd-place" class="switch-plate"  (click)="flipToggle('num-one-3rd-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-2nd-place" class="switch-plate"  (click)="flipToggle('num-one-2nd-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-1st-place" class="switch-plate"  (click)="flipToggle('num-one-1st-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-one-0th-place" class="switch-plate"  (click)="flipToggle('num-one-0th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -86,10 +86,10 @@
     <!-- Switch for the operand -->
     <div class="switch">
         <div class="switch-text">
-            <p>+</p>
             <p>-</p>
+            <p>+</p>
         </div>
-        <div class="switch-plate flipped">
+        <div id="operand" class="switch-plate" (click)="flipToggle('operand')">
             <div class="toggle"></div>
         </div>
     </div>
@@ -101,7 +101,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-7th-place" class="switch-plate"  (click)="flipToggle('num-two-7th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-6th-place" class="switch-plate"  (click)="flipToggle('num-two-6th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -121,7 +121,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-5th-place" class="switch-plate"  (click)="flipToggle('num-two-5th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -131,7 +131,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-4th-place" class="switch-plate"  (click)="flipToggle('num-two-4th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -141,7 +141,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-3rd-place" class="switch-plate"  (click)="flipToggle('num-two-3rd-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -151,7 +151,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-2nd-place" class="switch-plate"  (click)="flipToggle('num-two-2nd-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -161,7 +161,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate">
+            <div id="num-two-1st-place" class="switch-plate"  (click)="flipToggle('num-two-1st-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -171,7 +171,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div class="switch-plate flipped">
+            <div id="num-two-0th-place" class="switch-plate"  (click)="flipToggle('num-two-0th-place')">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -240,7 +240,7 @@
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div class="bulb bulb-turned-on"></div>
             <div class="bulb-text">
                 <p>2⁰</p>
             </div>

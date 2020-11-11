@@ -32,6 +32,7 @@
 .switch {
     margin: 20px 15px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .switch-text {
