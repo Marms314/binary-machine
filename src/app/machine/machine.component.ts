@@ -16,7 +16,7 @@ export class MachineComponent implements OnInit {
   flipToggle(switchId: string): void {
     let toggle: HTMLElement = document.getElementById(switchId);
     this.changeToggleData(toggle);
-    this.findAllPlacesOfSum()
+    this.findAllPlacesOfSum();
   }
 
   //Updates the switch so it flips and will be true when flipped up and false when flipped down.
