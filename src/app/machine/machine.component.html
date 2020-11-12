@@ -1,13 +1,14 @@
 <div class="machine-face">
 
-    <!-- Switches for the first number -->
+    <!-- Switches for the first number. IDs are 2 digit numbers like 12. 
+        First digit indicates the number the switch is for, the second indicates which power of 2 the switch represents-->
     <div class="number1">
         <div class="switch">
             <div class="switch-text">
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-7th-place" class="switch-plate"  (click)="flipToggle('num-one-7th-place')">
+            <div id="17" class="switch-plate"  (click)="flipToggle('17')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -17,7 +18,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-6th-place" class="switch-plate"  (click)="flipToggle('num-one-6th-place')">
+            <div id="16" class="switch-plate"  (click)="flipToggle('16')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -27,7 +28,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-5th-place" class="switch-plate"  (click)="flipToggle('num-one-5th-place')">
+            <div id="15" class="switch-plate"  (click)="flipToggle('15')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -37,7 +38,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-4th-place" class="switch-plate"  (click)="flipToggle('num-one-4th-place')">
+            <div id="14" class="switch-plate"  (click)="flipToggle('14')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -47,7 +48,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-3rd-place" class="switch-plate"  (click)="flipToggle('num-one-3rd-place')">
+            <div id="13" class="switch-plate"  (click)="flipToggle('13')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -57,7 +58,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-2nd-place" class="switch-plate"  (click)="flipToggle('num-one-2nd-place')">
+            <div id="12" class="switch-plate"  (click)="flipToggle('12')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -67,7 +68,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-1st-place" class="switch-plate"  (click)="flipToggle('num-one-1st-place')">
+            <div id="11" class="switch-plate"  (click)="flipToggle('11')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -77,31 +78,32 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-one-0th-place" class="switch-plate"  (click)="flipToggle('num-one-0th-place')">
+            <div id="10" class="switch-plate"  (click)="flipToggle('10')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
     </div>
 
-    <!-- Switch for the operand -->
-    <div class="switch">
+    <!-- Switch for the operator. Will unhide after adding subtraction functionality. Don't forget to add underflow to the overflow, too! -->
+    <div class="switch" style="visibility: hidden;">
         <div class="switch-text">
             <p>-</p>
             <p>+</p>
         </div>
-        <div id="operand" class="switch-plate" (click)="flipToggle('operand')">
+        <div id="operator" class="switch-plate" (click)="flipToggle('operator')">
             <div class="toggle"></div>
         </div>
     </div>
  
-    <!-- Switches for the second number -->
+    <!-- Switches for the second number. IDs are 2 digit numbers like 23. 
+        First digit indicates the number the switch is for, the second indicates which power of 2 the switch represents-->
     <div class="number2">
         <div class="switch">
             <div class="switch-text">
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-7th-place" class="switch-plate"  (click)="flipToggle('num-two-7th-place')">
+            <div id="27" class="switch-plate"  (click)="flipToggle('27')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -111,7 +113,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-6th-place" class="switch-plate"  (click)="flipToggle('num-two-6th-place')">
+            <div id="26" class="switch-plate"  (click)="flipToggle('26')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -121,7 +123,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-5th-place" class="switch-plate"  (click)="flipToggle('num-two-5th-place')">
+            <div id="25" class="switch-plate"  (click)="flipToggle('25')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -131,7 +133,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-4th-place" class="switch-plate"  (click)="flipToggle('num-two-4th-place')">
+            <div id="24" class="switch-plate"  (click)="flipToggle('24')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -141,7 +143,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-3rd-place" class="switch-plate"  (click)="flipToggle('num-two-3rd-place')">
+            <div id="23" class="switch-plate"  (click)="flipToggle('23')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -151,7 +153,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-2nd-place" class="switch-plate"  (click)="flipToggle('num-two-2nd-place')">
+            <div id="22" class="switch-plate"  (click)="flipToggle('22')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -161,7 +163,7 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-1st-place" class="switch-plate"  (click)="flipToggle('num-two-1st-place')">
+            <div id="21" class="switch-plate"  (click)="flipToggle('21')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
@@ -171,19 +173,18 @@
                 <p>1</p>
                 <p>0</p>
             </div>
-            <div id="num-two-0th-place" class="switch-plate"  (click)="flipToggle('num-two-0th-place')">
+            <div id="20" class="switch-plate"  (click)="flipToggle('20')" data-is-on="false">
                 <div class="toggle"></div>
             </div>
         </div>
      </div>
 
-     <!-- Overflow/UnderFlow Bulb-->
+     <!-- Overflow Bulb-->
     <div class="bulb-back">
-        <div class="bulb"></div>
+        <div id="ou" class="bulb"></div>
         <div class="bulb-text">
             <p>
-            Overflow/<br>
-            Underflow
+            Overflow
             </p>
         </div>
     </div>
@@ -191,56 +192,56 @@
     <!-- Number Bulbs -->
     <div class="number-bulbs">
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r7" class="bulb"></div>
             <div class="bulb-text">
                 <p>2⁷</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r6" class="bulb"></div>
             <div class="bulb-text">
                 <p>2⁶</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r5" class="bulb"></div>
             <div class="bulb-text">
                 <p>2⁵</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r4" class="bulb"></div>
             <div class="bulb-text">
                 <p>2⁴</p>
             </div>
         </div>
         
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r3" class="bulb"></div>
             <div class="bulb-text">
                 <p>2³</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r2" class="bulb"></div>
             <div class="bulb-text">
                 <p>2²</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb"></div>
+            <div id="r1" class="bulb"></div>
             <div class="bulb-text">
                 <p>2¹</p>
             </div>
         </div>
 
         <div class="bulb-back">
-            <div class="bulb bulb-turned-on"></div>
+            <div id="r0" class="bulb"></div>
             <div class="bulb-text">
                 <p>2⁰</p>
             </div>
