@@ -30,7 +30,7 @@ export class MachineComponent implements OnInit {
     }
   }
 
-  //Finds the sum of all places for the two numbers added together. Turns on the overflow bulb if the sum is above 1111_1111
+  //Finds the sum of all places for the two numbers added together. Turns on the overflow bulb if the sum is above 1111-1111
   findAllPlacesOfSum(): void {
     let carry: boolean = false;
     for (let i: number = 0; i < 8; i++) {
