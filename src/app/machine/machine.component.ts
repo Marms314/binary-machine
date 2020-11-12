@@ -49,8 +49,8 @@ export class MachineComponent implements OnInit {
   findSinglePlaceOfSum(numberPlace: string, carryIn: boolean): boolean {
     let toggle1: string = document.getElementById("1" + numberPlace).getAttribute("data-is-on");
     let toggle2: string = document.getElementById("2" + numberPlace).getAttribute("data-is-on");
-    let toggle1Converted = toggle1 == "true";
-    let toggle2Converted = toggle2 == "true";
+    let toggle1Converted: boolean = toggle1 == "true";
+    let toggle2Converted: boolean = toggle2 == "true";
 
     let results: boolean[] = this.fullAdder(toggle1Converted, toggle2Converted, carryIn);
     let sum: boolean = results[0];
