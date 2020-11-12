@@ -19,7 +19,7 @@ export class MachineComponent implements OnInit {
     this.findAllPlacesOfSum();
   }
 
-  //Updates the switch so it flips and will be true when flipped up and false when flipped down.
+  //Updates the switch so it flips and will read true when flipped up and false when flipped down.
   changeToggleData(toggle: HTMLElement): void {
     if (toggle.className.indexOf("toggle-flipped-up") == -1) {
       toggle.className = "switch-plate toggle-flipped-up";
@@ -30,6 +30,7 @@ export class MachineComponent implements OnInit {
     }
   }
 
+  //Finds the sum of all places for the two numbers added together. Turns on the overflow bulb if the sum is above 1111_1111
   findAllPlacesOfSum(): void {
     let carry: boolean = false;
     for (let i: number = 0; i < 8; i++) {
@@ -43,6 +44,8 @@ export class MachineComponent implements OnInit {
     }
   }
 
+  //Identifies a single place to add between the 2 numbers and includes any carry in from lower places. Will light the appropriate place bulb if the sum is true.
+  //Returns carry out for next higher place to use
   findSinglePlaceOfSum(numberPlace: string, carryIn: boolean): boolean {
     let toggle1: string = document.getElementById("1" + numberPlace).getAttribute("data-is-on");
     let toggle2: string = document.getElementById("2" + numberPlace).getAttribute("data-is-on");
