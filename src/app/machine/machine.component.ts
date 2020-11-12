@@ -57,9 +57,9 @@ export class MachineComponent implements OnInit {
     let carryOut = results[1]
 
     if (sum) {
-      document.getElementById("r" + numberPlace).className = "bulb bulb-turned-on";
+      document.getElementById("place" + numberPlace).className = "bulb bulb-turned-on";
     } else {
-      document.getElementById("r" + numberPlace).className = "bulb";
+      document.getElementById("place" + numberPlace).className = "bulb";
     }
 
     return carryOut;
